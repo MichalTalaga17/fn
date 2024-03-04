@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <title>Minecraft
+    </title>
+</head>
+
+<body>
+    <canvas id="myCanvas">
+    </canvas>
+    <div id="game_over">
+        <!-- <button id="back_to_main_menu">BACK TO MAIN MENU</button> -->
+        <button id="reset_level">START</button>
+    </div>
+    <div id="in_game_overlay">
+        <div id="down_screen_gui">
+            <div id="health_bar">
+                <div id="health_background_grid">
+                    <img class="heart" src="./images/gui/heart_background.png" alt="">
+                    <img class="heart" src="./images/gui/heart_background.png" alt="">
+                    <img class="heart" src="./images/gui/heart_background.png" alt="">
+                    <img class="heart" src="./images/gui/heart_background.png" alt="">
+                    <img class="heart" src="./images/gui/heart_background.png" alt="">
+                </div>
+                <div id="health_grid">
+                    <img class="heart" src="./images/gui/full_heart.png" alt="">
+                    <img class="heart" src="./images/gui/full_heart.png" alt="">
+                    <img class="heart" src="./images/gui/full_heart.png" alt="">
+                    <img class="heart" src="./images/gui/full_heart.png" alt="">
+                    <img class="heart" src="./images/gui/full_heart.png" alt="">
+                </div>
+            </div>
+            <div id="exp_bar">
+                <img src="./images/gui/exp_bar_empty.png" id="exp_background">
+                <img src="./images/gui/exp_bar_full.png" id="exp_bar_full">
+                <div id="exp_level">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>

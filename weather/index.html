@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My Weather App</title>
+        <meta name="robots" content="noindex, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <!-- CSS 
+    ============================================ -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/slick.css">
+        <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/plugins/feature.css">
+        <!-- Style css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <body class="template-color-1 spybody spybody "
+        data-spy="scroll"
+        data-target=".navbar-example2" data-offset="70">
+
+
+
+        <main class="main-page-wrapper">
+
+
+
+            <!-- Start Service Area -->
+            <div class="rn-service-area rn-section-gap section-separator"
+                id="features">
+                <div class="container col-lg-12">
+
+                    <div class="row col-lg-12">
+                        <div class="col-lg-6">
+                            <div class="section-title text-right col-lg-12">
+                                <h2 class="title">My<br>Weather<br>App</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4
+                            contact-input">
+
+                            <div class="contact-form-wrapper col-lg-12">
+                                <div class="introduce col-lg-12">
+                                    <form class="col-lg-12">
+                                        <div class="col-lg-13">
+                                            <div class="form-group ">
+                                                <label for="contact-name">Wpisz
+                                                    miasto</label>
+                                                <input class="form-control
+                                                    form-control-lg" name="text"
+                                                    id="contact-name"
+                                                    type="text"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="rn-btn
+                                            szukaj col-lg-12">
+                                            <span>SZUKAJ</span>
+                                        </button>
+                                        <button type="button" class="rn-btn
+                                            lokalizuj col-lg-12">
+                                            <span>LOKALIZUJ</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ukryty info col-lg-12 col-xl-12 col-md-12
+                        col-sm-12
+                        col-12 mt--50 mt_md--30 mt_sm--30 nadrzedny
+                        ">
+                        <div class="rn-service col-xl-12">
+                            <div class="inner col-xl-12">
+                                <h4 class="aktualna_title col-xl-12"></h4>
+                                <div class=" row content aktualna srodek
+                                    col-xl-12">
+
+                                    <div class="col-xl-1 aktualna_ikona">
+                                    </div>
+                                    <div class="col-xl-3 slonce">
+                                        <div class="col-xl-12 wschod">
+                                            <h6>Wschód słońca: <span
+                                                    class="aktualna_slonce_wschod_v"></span></h6>
+                                        </div>
+                                        <div class="col-xl-12 zachod">
+                                            <h6>Zachód słońca: <span
+                                                    class="aktualna_slonce_zachod_v"></span></h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 wilgotnosc">
+                                        <h6>Wilgotność: <span
+                                                class="aktualna_wilgotnosc_v"></span></h6>
+                                    </div>
+                                    <div class="col-xl-2 wiatr">
+                                        <h6>Wiatr: <span
+                                                class="aktualna_wiatr_v"></span></h6>
+                                    </div>
+                                    <div class="col-xl-2 odczuwalna">
+                                        <h6>Temperatura odczuwalna: <span
+                                                class="aktualna_temperatura_o_v"></span>
+                                            °C</h6>
+                                    </div>
+                                    <div class="col-xl-2 temperatura">
+                                        <h5> <span
+                                                class="aktualna_temperatura_v"></span>
+                                            °C</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ukryty info col-lg-12 col-xl-12 col-md-12
+                        col-sm-12
+                        col-12 mt--50 mt_md--30 mt_sm--30 nadrzedny
+                        ">
+                        <div class="rn-service col-xl-12">
+                            <div class="inner col-xl-12">
+                                <div class=" row content godzinowa
+                                    col-xl-12">
+                                    <h4 class="godzinowa_title col-xl-12">Godzinowa</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ukryty info col-lg-12 col-xl-12 col-md-12
+                        col-sm-12
+                        col-12 mt--50 mt_md--30 mt_sm--30 nadrzedny
+                        ">
+                        <div class="rn-service col-xl-12">
+                            <div class="inner col-xl-12">
+                                <div class=" row content dzienna
+                                    col-xl-12">
+                                    <h4 class="dzienna_title col-xl-12">Dzienna</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ukryty info col-lg-12 col-xl-12 col-md-12
+                        col-sm-12
+                        col-12 mt--50 mt_md--30 mt_sm--30 nadrzedny
+                        ">
+                        <div class="rn-service col-xl-12">
+                            <div class="inner col-xl-12">
+                                <div class=" row content zanieczyszczenie
+                                    col-xl-12">
+                                    <h4 class="zanieczyszczenie_title
+                                        col-xl-12">Zanieczyszczenie</h4>
+                                    <div class="col-xl-12 row">
+                                        <div class="col-xl-9 srodek">
+                                            <h5><span class="city"></span></h5>
+                                        </div>
+                                        <div class="col-xl-3 srodek">
+                                            <h5><span class="name">AQI :</span><span
+                                                    class="v_aqi"> </span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12 row">
+                                        <div class="col-xl-2
+                                            srodek">
+                                            <h6>Stężenie CO</h6><br><span
+                                                class="v_co
+                                                v"></span>
+                                        </div>
+                                        <div class="col-xl-2
+                                            srodek">
+                                            <h6>Stężenie NO</h6><br><span
+                                                class="v_no
+                                                v"></span>
+                                        </div>
+                                        <div class="col-xl-2
+                                            srodek">
+                                            <h6>Stężenie O<sub>3</sub></h6><br><span
+                                                class="v_o3 v"></span>
+                                        </div>
+                                        <div class="col-xl-2
+                                            srodek">
+                                            <h6>Stężenie PM10</h6><br><span
+                                                class="v_pm10
+                                                v"></span>
+
+                                        </div>
+                                        <div class="col-xl-2
+                                            srodek">
+                                            <h6>Stężenie PM2.5</h6><br><span
+                                                class="v_pm25 v"></span>
+                                        </div>
+                                        <div class="col-xl-2
+                                            srodek">
+                                            <h6>Stężenie SO<sub>2</sub></h6><br><span
+                                                class="v_so2 v"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Service Area  -->
+
+
+
+
+
+        </main>
+
+        <!-- Start Footer Area -->
+        <div class="rn-footer-area rn-section-gap section-separator">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-area text-center">
+                            <p class="description mt--30">©<a target="_blank"
+                                    href="https://michaltalaga.me">Michał
+                                    Talaga
+                                    2022</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Area -->
+
+
+        <!-- <script src="script.js"></script> -->
+        <script src="script0.js"></script>
+        <script src="script1local.js"></script>
+        <script src="script2city.js"></script>
+
+    </body>
+
+</html>

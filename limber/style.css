@@ -1,0 +1,109 @@
+* {
+    font-family: Calibri;
+}
+
+#down_screen_gui {
+    z-index: 4;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: fit-content;
+    height: fit-content;
+}
+
+#exp_bar {
+    width: 600px;
+    bottom: inherit;
+}
+
+#exp_background {
+    width: inherit;
+    position: absolute;
+    bottom: inherit;
+}
+
+#exp_bar_full {
+    width: inherit;
+    position: absolute;
+    bottom: inherit;
+    clip: rect(0px, 0px, 25px, 0px);
+}
+
+#exp_level {
+    position: absolute;
+    bottom: inherit;
+    font-size: 32px;
+    transform: translate(-50%, 25%);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    left: 300px;
+}
+
+#health_bar {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+#health_background_grid {
+    bottom: 30px;
+    position: absolute;
+    display: grid;
+    grid-auto-columns: 55px;
+    grid-auto-rows: 55px;
+    grid-template-columns: 55px 55px 55px 55px 55px;
+    gap: 0% 0%;
+}
+
+#health_grid {
+    bottom: 30px;
+    position: absolute;
+    display: grid;
+    grid-auto-columns: 55px;
+    grid-auto-rows: 55px;
+    grid-template-columns: 55px 55px 55px 55px 55px;
+    gap: 0% 0%;
+}
+
+.heart {
+    width: 45px;
+    padding: 5px;
+}
+
+#game_over {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#game_over>button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 50px;
+    background-color: rgb(173, 173, 173);
+    color: white;
+    border: 2px solid gray;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 0px 0px 6px black;
+}
+
+#game_over>button:hover {
+    background-color: gray;
+    color: white;
+    border: 2px solid rgb(82, 82, 82);
+    font-size: 30px;
+}
+
+#back_to_main_menu {
+    transform: translate(-50%, -60%);
+}
+
+#reset_level {
+    transform: translate(-50%, -50%);
+}
