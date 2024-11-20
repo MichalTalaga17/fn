@@ -1,4 +1,4 @@
-#Projects by Students of W. Goetel School in Sucha Beskidzka  
+# Projects by Students of W. Goetel School in Sucha Beskidzka  
 
 Welcome to the official repository for projects created by students of the W. Goetel School in Sucha Beskidzka. This repository serves as a central hub for storing, organizing, and sharing work developed as part of learning programming, IT technologies, and other disciplines.
 
